@@ -34,5 +34,5 @@ mv用于重命名或移动该文件：
 touch用于创建新文件：
 > touch *file name*
 
-###如何用ExplainShell搜寻命令使用方法
+### 如何用ExplainShell搜寻命令使用方法
 当遇到某个命令不明白其使用方法时，可登陆[ExplainShell](https://explainshell.com/)并输入该命令，即可查看该命令的作用。
