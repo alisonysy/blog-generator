@@ -1,7 +1,7 @@
 ---
 title: Git入门-简单操作命令介绍
 date: 2019-01-10 15:45:49
-tags:
+tags: GitIntro 
 ---
 
 Git的操作命令繁多，以下是常用的几个：
