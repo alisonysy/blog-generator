@@ -3,7 +3,7 @@ title: 初识HTTP——请求和响应
 date: 2019-01-11 15:43:22
 tags: HTTP
 ---
-[hh](https://github.com/alisonysy/alisonysy.github.io/blob/master/img/logo.jpg?raw=true "jj")
+![hh](https://github.com/alisonysy/alisonysy.github.io/blob/master/img/logo.jpg?raw=true "jj")
 
 **HTTP**, aka Hypertext Transfer Protocol, 意为超文本传输协议。
 何为*超文本*？个人理解是：从前一向的文字记录是一种有先后/时间/逻辑顺序的语言组织，而超文本则可以将不同的离散信息以创建者指定的方式*非线性*地储存和组织起来。通过超链接，读者可以随意跳离当前信息，到超链接指定的新信息。
@@ -12,3 +12,13 @@ tags: HTTP
 ## HTTP请求
 请求Request，是当浏览器/客户端*需要*某些东西，如浏览一个网页、查看一张图片时，告诉服务器“我想做……”。
 客户端发出的请求需要按照一定的规则来请求，其中需包含的信息有：
+
+1. 动词 路径 协议/版本
+2. Key1: value1
+2. Key2: value2
+... (第二部分可有多个key: value)
+3. 空行
+4. 要上传的数据 (第四部分可有可无)
+
+其中第一部分的动词常见的有：
+GET 表示获取
