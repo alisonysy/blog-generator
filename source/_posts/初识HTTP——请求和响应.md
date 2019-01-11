@@ -31,3 +31,18 @@ DELETE 表示从服务器删除资源
 
 若没有请求相关路径，则路径默认为 /
 
+如图，以 **>** 开头的行表示浏览器请求的信息：
+> GET / HTTP/1.1 
+*此行为第一部分*
+> Host: www.baidu.com
+> User-Agent: curl/7.55.0
+> Accept: */*
+> hhh: xxx 
+*此行及以上为第二部分*
+>
+*这里是第三部分的空行*
+
+图中因为只是从服务器中获取，并没有数据的上传，因此没有第四部分。
+
+![HTTP请求和响应](https://github.com/alisonysy/alisonysy.github.io/blob/master/img/requestandresponse.png?raw=true "HTTP请求和响应")
+
