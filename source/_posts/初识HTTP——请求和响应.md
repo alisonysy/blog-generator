@@ -21,16 +21,16 @@ tags: HTTP
   在浏览器地址栏输入一个网址，如www.baidu.com
   点击在Network中显示的第一个
   找到Request Headers，点击view source，即可看到请求的内容
-  ![“查看”界面的一部分](https://github.com/alisonysy/alisonysy.github.io/blob/master/img/3_1.png?raw=true "查看")
+  ![“查看”界面的一部分](http://imglf4.nosdn0.126.net/img/RW5xeGhweHowWDR6eVI5Mks3a2RoT3dweEVDZ2pnNE9wYkxEeERkK2p1aFRwcGcyQUdLZ1ZnPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0 "查看")
 
   客户端发出的请求需要按照一定的规则来请求，其中需包含的信息有：
 
-  1. 动词 路径 协议/版本
-  2. Key1: value1
-  2. Key2: value2
+  1.动词 路径 协议/版本
+  2.Key1: value1
+  2.Key2: value2
   .. (第二部分可有多个key: value)
-  3. 空行
-  4. 要上传的数据 (第四部分可有可无)
+  3.空行
+  4.要上传的数据 (第四部分可有可无)
 
   第一部分的动词常见的有：
   GET 表示从服务器获取资源
@@ -49,12 +49,12 @@ tags: HTTP
   和用Chrome查看HTTP请求内容相似，唯一不同的是需要找到Response Headers，再点击view source。
 
   响应的格式为：
-  1. 协议/版本号 状态码 状态解释
-  2. Key1: value1
-  2. Key2: value2
+  1.协议/版本号 状态码 状态解释
+  2.Key1: value1
+  2.Key2: value2
   ..
-  3. 空行
-  4. 要下载的内容
+  3.空行
+  4.要下载的内容
 
   其中，不同的状态码表示不同的响应类型，如2XX的状态码表示请求成功，3XX的状态码表示客户端需采取别的操作才能完成请求，具体请看[维基百科的HTTP状态码](https://zh.wikipedia.org/wiki/HTTP%E7%8A%B6%E6%80%81%E7%A0%81 "HTTP状态码-维基")
 
@@ -65,17 +65,17 @@ tags: HTTP
 > curl -s -v -H *"xxx"* -- "url"
 
 斜体 *"xxx"* 的部分可有可无。如：
-![curl命令例子](https://github.com/alisonysy/alisonysy.github.io/blob/master/img/3_2.png?raw=true "curl命令")
+![curl命令例子](http://imglf4.nosdn0.126.net/img/RW5xeGhweHowWDR6eVI5Mks3a2RoQzFuWG56RWtYbEJUc3lkNC9BajJoQjlWTUJTZWlmTVpBPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0 "curl命令")
 
 这时，向url所在的服务器发起请求，获取该网页。之后，会返回如下信息：
-![HTTP请求和响应](https://github.com/alisonysy/alisonysy.github.io/blob/master/img/3_3.png?raw=true "HTTP请求和响应")
+![HTTP请求和响应](http://imglf4.nosdn0.126.net/img/RW5xeGhweHowWDR6eVI5Mks3a2RoRWFEWmV3SisxS25UNWF3NFdtTlpNakFGMXhjb0E0RSt3PT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0"HTTP请求和响应")
 
 如图，以 **>** 开头的行表示浏览器请求的信息：
 > GET / HTTP/1.1 
 *此行为第一部分*
 > Host: www.baidu.com
 > User-Agent: curl/7.55.0
-> Accept: */*
+> Accept: \*/\*
 > hhh: xxx 
 *此行及以上为第二部分*
 >
