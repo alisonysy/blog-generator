@@ -68,7 +68,7 @@ tags: HTTP
 ![curl命令例子](http://imglf4.nosdn0.126.net/img/RW5xeGhweHowWDR6eVI5Mks3a2RoQzFuWG56RWtYbEJUc3lkNC9BajJoQjlWTUJTZWlmTVpBPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0 "curl命令")
 
 这时，向url所在的服务器发起请求，获取该网页。之后，会返回如下信息：
-![HTTP请求和响应](http://imglf4.nosdn0.126.net/img/RW5xeGhweHowWDR6eVI5Mks3a2RoRWFEWmV3SisxS25UNWF3NFdtTlpNakFGMXhjb0E0RSt3PT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0"HTTP请求和响应")
+![HTTP请求和响应](http://imglf4.nosdn0.126.net/img/RW5xeGhweHowWDR6eVI5Mks3a2RoRWFEWmV3SisxS25UNWF3NFdtTlpNakFGMXhjb0E0RSt3PT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0 "HTTP请求和响应")
 
 如图，以 **>** 开头的行表示浏览器请求的信息：
 > GET / HTTP/1.1 
