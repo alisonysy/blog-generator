@@ -3,7 +3,6 @@ title: 初识HTTP——请求和响应
 date: 2019-01-11 15:43:22
 tags: HTTP
 ---
-![]()
 
 **HTTP**, aka Hypertext Transfer Protocol, 意为超文本传输协议。
 何为*超文本*？个人理解是：从前一向的文字记录是一种有先后/时间/逻辑顺序的语言组织，而超文本则可以将不同的离散信息以创建者指定的方式*非线性*地储存和组织起来。通过超链接，读者可以随意跳离当前信息，到超链接指定的新信息。
@@ -22,7 +21,7 @@ tags: HTTP
   在浏览器地址栏输入一个网址，如www.baidu.com
   点击在Network中显示的第一个
   找到Request Headers，点击view source，即可看到请求的内容
-  ![“查看”界面的一部分]()
+  ![“查看”界面的一部分](https://github.com/alisonysy/alisonysy.github.io/blob/master/img/3_web1.png?raw=true "查看")
 
   客户端发出的请求需要按照一定的规则来请求，其中需包含的信息有：
 
@@ -63,10 +62,10 @@ tags: HTTP
 
 ## Git Bash中使用curl命令执行HTTP协议的请求和响应
 打开Git Bash后，运行：
-> curl -s -v -H *"xxx"* -- "url"
+> `curl -s -v -H *"xxx"* -- "url"`
 
 斜体 *"xxx"* 的部分可有可无。如：
-![curl命令例子]()
+![curl命令例子](https://github.com/alisonysy/alisonysy.github.io/blob/master/img/3_web2.png?raw=true "curl命令")
 
 这时，向url所在的服务器发起请求，获取该网页。之后，会返回如下信息：
 ![HTTP请求和响应](https://github.com/alisonysy/alisonysy.github.io/blob/master/img/requestandresponse.png?raw=true "HTTP请求和响应")
