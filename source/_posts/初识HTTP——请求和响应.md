@@ -21,7 +21,7 @@ tags: HTTP
   在浏览器地址栏输入一个网址，如www.baidu.com
   点击在Network中显示的第一个
   找到Request Headers，点击view source，即可看到请求的内容
-  ![“查看”界面的一部分](https://github.com/alisonysy/alisonysy.github.io/blob/master/img/3_web1.png?raw=true "查看")
+  ![“查看”界面的一部分](https://github.com/alisonysy/alisonysy.github.io/blob/master/img/3_1.png?raw=true "查看")
 
   客户端发出的请求需要按照一定的规则来请求，其中需包含的信息有：
 
@@ -62,13 +62,13 @@ tags: HTTP
 
 ## Git Bash中使用curl命令执行HTTP协议的请求和响应
 打开Git Bash后，运行：
-> `curl -s -v -H *"xxx"* -- "url"`
+> curl -s -v -H *"xxx"* -- "url"
 
 斜体 *"xxx"* 的部分可有可无。如：
-![curl命令例子](https://github.com/alisonysy/alisonysy.github.io/blob/master/img/3_web2.png?raw=true "curl命令")
+![curl命令例子](https://github.com/alisonysy/alisonysy.github.io/blob/master/img/3_2.png?raw=true "curl命令")
 
 这时，向url所在的服务器发起请求，获取该网页。之后，会返回如下信息：
-![HTTP请求和响应](https://github.com/alisonysy/alisonysy.github.io/blob/master/img/requestandresponse.png?raw=true "HTTP请求和响应")
+![HTTP请求和响应](https://github.com/alisonysy/alisonysy.github.io/blob/master/img/3_3.png?raw=true "HTTP请求和响应")
 
 如图，以 **>** 开头的行表示浏览器请求的信息：
 > GET / HTTP/1.1 
