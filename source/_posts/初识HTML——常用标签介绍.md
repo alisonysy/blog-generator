@@ -91,40 +91,7 @@ tags: HTML
   用< tr >元素表示1行，< td >元素表示1个单元格内的数据。表格里的列数由任意一个< tr >元素里的< td >或< th >元素的**最大数量**决定。
 
   这是个栗子：
-  <table border=3px align="center">
-  <caption>这是表格标题</caption>
-  <colgroup>
-    <col width="100">
-    <col width="50">
-  </colgroup>
-  <thead>
-    <tr>
-      <th>项目1(宽度为100px)</th>
-      <th>项目2(宽度为50px)</th>
-      <th>项目3</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>数据1</td>
-      <td>数据2</td>
-      <td>数据3(没有设置宽度)</td>
-      <td>数据4(我是多了出来的)</td>
-    </tr>
-    <tr>
-      <td>数据5</td>
-      <td>数据6</td>
-      <td>数据7</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td>总数1</td>
-      <td>总数2</td>
-      <td>总数3</td>
-    </tr>
-  </tfoot>
-  </table>
+  <table border=3px align="center"><caption>这是表格标题</caption><colgroup><col width="100"><col width="50"></colgroup><thead><tr><th>项目1(宽度为100px)</th><th>项目2(宽度为50px)</th><th>项目3</th></tr></thead><tbody><tr><td>数据1</td><td>数据2</td><td>数据3(没有设置宽度)</td><td>数据4(我是多了出来的)</td></tr><tr><td>数据5</td><td>数据6</td><td>数据7</td></tr></tbody><tfoot><tr><td>总数1</td><td>总数2</td><td>总数3</td></tr></tfoot></table>
 
 ### < caption >
   > < caption > 标题文本 < /caption >
