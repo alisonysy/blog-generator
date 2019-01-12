@@ -91,7 +91,7 @@ tags: HTML
   用< tr >元素表示1行，< td >元素表示1个单元格内的数据。表格里的列数由任意一个< tr >元素里的< td >或< th >元素的**最大数量**决定。
 
 此处是一个栗子：
-<table border=1>
+  <table border=1px>
   <caption>这是表格标题</caption>
   <colgroup>
     <col width="100">
@@ -99,9 +99,9 @@ tags: HTML
   </colgroup>
   <thead>
     <tr>
-      <th>项目1</th>
-      <th>项目2</th>
-      <th>项目3</th>
+      <th>项目1(宽度为100px)</th>
+      <th>项目2(宽度为50px)</th>
+      <th>项目3(没有设置宽度)</th>
     </tr>
   </thead>
   <tbody>
@@ -124,7 +124,7 @@ tags: HTML
       <td>总数3</td>
     </tr>
   </tfoot>
-</table>
+  </table>
 
 ### < caption >
   > < caption > 标题文本 < /caption >
