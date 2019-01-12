@@ -88,5 +88,92 @@ tags: HTML
         < tbody > 0或多个；
         < tr > 1或多个
   5. < tfoot > ，可有可无
+  用< tr >元素表示1行，< td >元素表示1个单元格内的数据。表格里的列数由任意一个< tr >元素里的< td >或< th >元素的**最大数量**决定。
 
-  
+此处是一个栗子：
+<table border=1>
+  <caption>这是表格标题</caption>
+  <colgroup>
+    <col width="100">
+    <col width="50">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>项目1</th>
+      <th>项目2</th>
+      <th>项目3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>数据1</td>
+      <td>数据2</td>
+      <td>数据3</td>
+      <td>数据4(我是多了出来的)</td>
+    </tr>
+    <tr>
+      <td>数据5</td>
+      <td>数据6</td>
+      <td>数据7</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>总数1</td>
+      <td>总数2</td>
+      <td>总数3</td>
+    </tr>
+  </tfoot>
+</table>
+
+### < caption >
+  > < caption > 标题文本 < /caption >
+
+### < colgroup >
+  < colgroup >元素内可设置每个列的宽度，和指定列的背景颜色（不推荐用HTML指定背景颜色）。
+  设置指定列的宽度：
+  > < colgroup >
+  >     < col width="100" > 第一列宽度为100px
+  >     < col width="50" > 第二列宽度为50px
+  >     当没有第三个/第n个< col width >时，会默认宽度为能容纳文本的宽度
+  >  < /colgroup >
+
+### < thead >
+  用< thead >元素表示这是表头。里面可包含< tr >、< th >或< td >。< th >元素会加粗文本，表示项目。
+  > < thead >
+  >   < tr >
+  >     < th > 项目1 < /th >
+  >     < th > 项目2 < /th >
+  >     < th > 项目3 < /th >
+  >   < /tr >
+  > < /thead >
+
+### < tbody >
+  > < tbody >
+  >   < tr >
+  >     < td > 数据1 < /td >
+  >     < td > 数据2 < /td >
+  >     < td > 数据3 < /td >
+  >     < td > 数据4 < /td >
+  >   < /tr >
+  >   < tr >
+  >     < td > 数据5 < /td >
+  >     < td > 数据6 < /td >
+  >     < td > 数据7 < /td >
+  >   < /tr >
+  > < /tbody >
+
+  此处例子的< tbody > 部分有2行，其中第一行因为有4个单元格，导致整个表格多了1列。
+
+### < tfoot >
+  < tfoot >可用作为总计的行。
+  > < tfoot >
+  >   < tr >
+  >     < td > 总数1 < /td >
+  >     < td > 总数2 < /td >
+  >     < td > 总数3 < /td >
+  >   < /tr >
+  > < /tfoot >
+
+### < thead >, < tbody > 和< tfoot >的作用
+  这3个元素在HTML表格里其实是可有可无，他们的作用是*按顺序*标记表格的内容，即无论编程时三个元素的顺序如何，在前端展示< thead >的内容总在< tbody >前，< tbody >的内容总在< tfoot >前。
