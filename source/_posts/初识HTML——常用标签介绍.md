@@ -90,8 +90,8 @@ tags: HTML
   5. < tfoot > ，可有可无
   用< tr >元素表示1行，< td >元素表示1个单元格内的数据。表格里的列数由任意一个< tr >元素里的< td >或< th >元素的**最大数量**决定。
 
-此处是一个栗子：
-  <table border=1px>
+  这是个栗子：
+  <table border=3px align="center">
   <caption>这是表格标题</caption>
   <colgroup>
     <col width="100">
@@ -101,14 +101,14 @@ tags: HTML
     <tr>
       <th>项目1(宽度为100px)</th>
       <th>项目2(宽度为50px)</th>
-      <th>项目3(没有设置宽度)</th>
+      <th>项目3</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>数据1</td>
       <td>数据2</td>
-      <td>数据3</td>
+      <td>数据3(没有设置宽度)</td>
       <td>数据4(我是多了出来的)</td>
     </tr>
     <tr>
