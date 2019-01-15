@@ -20,12 +20,14 @@ tags: CSS
   若要使2个块级元素成左右布局，可以：
   ### 利用float属性
   HTML:
-  ![HTML代码-利用float把2个div设置成左右结构](http://imglf4.nosdn0.126.net/img/RW5xeGhweHowWDVrbGJ1Uk8zUFVDblJ4eGJsSlJhSFJGa3o2ejNMbmxaTU01QWhTQ2UrMDhBPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0)
+  ![HTML代码-利用float把2个div设置成左右结构](http://imglf6.nosdn0.126.net/img/RW5xeGhweHowWDdzRkVMOTQrUTczeWtVMnYrcE13Yng1dE1DYkRXdUVXUVNLbVNrMENlNERRPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0)
 
   CSS:
-  ![CSS代码-利用float把2个div设置成左右结构](http://imglf4.nosdn0.126.net/img/RW5xeGhweHowWDVrbGJ1Uk8zUFVDazlKS1EwSnRCWnlGN2w4MU9JbjFSMk9lbWxJUjJzMjJ3PT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0)
+  ![CSS代码-利用float把2个div设置成左右结构](http://imglf4.nosdn0.126.net/img/RW5xeGhweHowWDdzRkVMOTQrUTczeDNlR3d1TVlERERQZ2J6RG5FTjRENFlzNzVJODN5MjZnPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0)
   在写CSS的时候，在把第一个block设置成float:left之后，block1里面的p会自动增加margin，此时可以把block2的display设置成inline-block，再把宽度调整就可以显示左右布局：
   ![float: left的左右布局](http://imglf4.nosdn0.126.net/img/RW5xeGhweHowWDVrbGJ1Uk8zUFVDanBZSERlODVoTjR1TDIvbUJIdEx0NmNwdDZLZXk2M25RPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0)
+
+  *注意*：在使用float的时候，需要与clearfix结合，因为float会使div脱离文档流，需要clearfix把后面正常参与文档流的内容后挪，不然会造成div中的内容与后面的内容视觉上重合。
 
 ## 左中右布局
   要实现左中右的布局，这里可以使用CSS里position的属性。
