@@ -55,7 +55,7 @@ Boolean({name:'may'}) // true
 ## 其他类型转换为number数字
 ### Number()方法
 ```
-Number('234') // 123
+Number('234') // 234
 ```
 ### parseInt()和parseFloat()方法
 parseInt()和parseFloat()都能使一个字符串转换为数字。字符串也可以是以二进制(0b开头)、八进制(0o开头)、十六进制(0x开头)的。其中，使用parseInt()时默认把字符串转为十进制的数字，但可通过增加第二个参数来标明目标的进制：
