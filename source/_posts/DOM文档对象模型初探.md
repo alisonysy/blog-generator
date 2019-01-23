@@ -1,0 +1,37 @@
+---
+title: DOM文档对象模型初探
+date: 2019-01-23 17:31:24
+tags: JavaScript
+---
+DOM，即Document Object Model，中文翻译是文档对象模型。它是连接网页的一种接口，？不太懂？
+我们看到的每一个网页(web page)，是一个文档(document)。文档上面有很多不同的元素、内容、样式等等，那我们往文档上面添加JS时候，应该怎么找到对应的东西呢？这时DOM就派上用场，它把HTML文档组织成一个由节点(node)连接成的树形结构，每一个节点包含对象，当我们需要拿到、添加、更改、删除文档中的某些东西时，我们可以通过DOM来做到。
+![What DOM is?]()
+那么，操作DOM的API主要有哪些类型？
+
+### Document
+Document类型的接口代表浏览器中的页面，相当于DOM树形结构的大门，通过Document API我们可以对HTML文档做进一步操作。
+```
+var webAddr = document.documentURI;
+console.log(webAddr);
+
+//这会打印出当前页面的网址
+```
+
+### Element
+Element是文档对象继承的最广泛的基本类型。其中HTMLElement接口是HTML里元素的基本接口。
+
+常见的Element属性：
+**Element.attributes** 以NamedNodeMap对象的形式返回对应的HTML里元素的属性
+**Element.classList** 以DOMTokenList返回元素的类，后面可以添加.add或.remove来增加或删除类。
+**Element.clientHeight** 对于有CSS样式或内联布局盒子的元素来说，它返回一个元素的内部高度的数值(不包含margin、border、横向滚动条的高度)
+**Element.clientTop** 是元素的顶部边框的像素宽度。clientTop是offsetTop和client area top中间的部分。
+**Element.id** 可以查找某个元素的id，也可设置某个元素的id，还可通过getElementById()来获取一个HTML里的元素。
+```
+var idString = element.id; // 查询某个元素的id
+element.id = idString; //对某个元素设置id
+```
+**Element.tagName** 在HTML文档中会返回对应元素的标签名。
+
+
+---
+EventTarget是由对象执行的、可以接收和监听事件的DOM接口。Element, Document, 和Window是最常见的事件对象。
