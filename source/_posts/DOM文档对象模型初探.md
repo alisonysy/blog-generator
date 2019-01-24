@@ -32,6 +32,16 @@ element.id = idString; //对某个元素设置id
 ```
 **Element.tagName** 在HTML文档中会返回对应元素的标签名。
 
+常见的Element方法：
+**Element.getAttribute()** 返回一个指定元素的属性的值。
+**Element.getBoundingClientRect()** 返回一个元素的大小及其相对于视窗的位置。返回的值包括left, top, right, bottom, x, y ,width和height。
+**Element.getElementsByClassName()** 提供一个类的名称，然后返回指定类的元素。
+**Element.querySelectorAll()** 可以提供以CSS形式写的选择器，浏览器以NodeList的形式返回所有符合这个选择器的元素。与**Element.querySelector()**不同的是，querySelectorAll()会返回所有符合的元素，但querySelector()只返回符合的第一个元素。
+**Element.scrollTo(x-coord, y-coord)** 用于在一个元素内滚动到对应的位置。常使用window.scrollTo()使当前视窗滚动到指定地方。
+**Element.toggleAttribute()** 用于为指定元素设置一个添加/删除属性的开关，若该元素有相关属性，则删除它；若无，则添加。
 
 ---
 EventTarget是由对象执行的、可以接收和监听事件的DOM接口。Element, Document, 和Window是最常见的事件对象。
+
+---
+TBC
