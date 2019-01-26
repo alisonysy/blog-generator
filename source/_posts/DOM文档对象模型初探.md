@@ -3,13 +3,13 @@ title: DOM文档对象模型初探
 date: 2019-01-23 17:31:24
 tags: JavaScript
 ---
-DOM，即Document Object Model，中文翻译是文档对象模型。它是连接网页的一种接口，？不太懂？
+DOM，即Document Object Model，中文翻译是文档对象模型。它把文档映射成对象，是连接网页的一种接口，？不太懂？
 我们看到的每一个网页(web page)，是一个文档(document)。文档上面有很多不同的元素、内容、样式等等，那我们往文档上面添加JS时候，应该怎么找到对应的东西呢？这时DOM就派上用场，它把HTML文档组织成一个由节点(node)连接成的树形结构，每一个节点包含对象，当我们需要拿到、添加、更改、删除文档中的某些东西时，我们可以通过DOM来做到。
 ![What DOM is?](https://i.loli.net/2019/01/26/5c4bbe45837a9.png)
 那么，操作DOM的API主要有哪些类型？
 
 ### Document
-Document类型的接口代表浏览器中的页面，相当于DOM树形结构的大门，通过Document API我们可以对HTML文档做进一步操作。
+Document类型的接口代表浏览器中的页面，< html >的实例是由Document构造出来的，相当于DOM树形结构的大门，通过Document API我们可以对HTML文档做进一步操作。
 ```
 var webAddr = document.documentURI;
 console.log(webAddr);
@@ -22,7 +22,7 @@ Element是文档对象继承的最广泛的基本类型。其中HTMLElement接�
 
 常见的Element属性：
 **Element.attributes** 以NamedNodeMap对象的形式返回对应的HTML里元素的属性
-**Element.classList** 以DOMTokenList返回元素的类，后面可以添加.add或.remove来增加或删除类。
+**Element.classList** 以DOMTokenList返回元素的类，后面可以添加.add或.remove来增加或删除类。与className不同的是，classList返回的是一个伪数组，可以通过*Element*.classList[ x ]来获得其中一个类的值，而className返回的是包含所有值的字符串。
 **Element.clientHeight** 对于有CSS样式或内联布局盒子的元素来说，它返回一个元素的内部高度的数值(不包含margin、border、横向滚动条的高度)
 **Element.clientTop** 是元素的顶部边框的像素宽度。clientTop是offsetTop和client area top中间的部分。
 **Element.id** 可以查找某个元素的id，也可设置某个元素的id，还可通过getElementById()来获取一个HTML里的元素。
