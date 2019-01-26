@@ -5,7 +5,7 @@ tags: JavaScript
 ---
 DOM，即Document Object Model，中文翻译是文档对象模型。它是连接网页的一种接口，？不太懂？
 我们看到的每一个网页(web page)，是一个文档(document)。文档上面有很多不同的元素、内容、样式等等，那我们往文档上面添加JS时候，应该怎么找到对应的东西呢？这时DOM就派上用场，它把HTML文档组织成一个由节点(node)连接成的树形结构，每一个节点包含对象，当我们需要拿到、添加、更改、删除文档中的某些东西时，我们可以通过DOM来做到。
-![What DOM is?]()
+![What DOM is?](https://i.loli.net/2019/01/26/5c4bbe45837a9.png)
 那么，操作DOM的API主要有哪些类型？
 
 ### Document
