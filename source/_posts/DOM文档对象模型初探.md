@@ -40,6 +40,16 @@ element.id = idString; //对某个元素设置id
 **Element.scrollTo(x-coord, y-coord)** 用于在一个元素内滚动到对应的位置。常使用window.scrollTo()使当前视窗滚动到指定地方。
 **Element.toggleAttribute()** 用于为指定元素设置一个添加/删除属性的开关，若该元素有相关属性，则删除它；若无，则添加。
 
+### NodeList
+一个NodeList是由通过诸如Node.childNodes属性或document.getElementByTagName()方法得到的所有节点组成的集合，注意，返回的集合不是数组，但可以使用数组的forEach()方法，而且可使用Array.from()将其转换成真正的数组。
+
+NodeList的属性：
+**NodeList.length** 是唯一的属性，当这个NodeList是动态的时候，当有新的节点加入NodeList时，NodeList.length会动态变化，否则，length在第一次获取后若没有重新获取，则保持第一次获取时的值。
+
+NodeList的方法：
+**NodeList.item() / NodeList[ item ]** 返回列表中的节点元素。
+**NodeList.entries() / NodeList.keys() / NodeList.values()** 均返回节点迭代器。
+**NodeList.forEach()** 对节点列表中每一个元素执行一个指定函数。
 ---
 EventTarget是由对象执行的、可以接收和监听事件的DOM接口。Element, Document, 和Window是最常见的事件对象。
 
